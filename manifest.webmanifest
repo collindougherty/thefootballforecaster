@@ -5,14 +5,14 @@
   "theme_color": "#1565c0",
   "background_color": "#1565c0",
   "icons": [{
-    "src": "/media/icon_hue3d685655c84c625d5ace1882e0e1f92_410892_192x192_fill_lanczos_center_3.png",
+    "src": "/thefootballforecaster/media/icon_hue3d685655c84c625d5ace1882e0e1f92_410892_192x192_fill_lanczos_center_3.png",
     "sizes": "192x192",
     "type": "image/png"
     }, {
-    "src": "/media/icon_hue3d685655c84c625d5ace1882e0e1f92_410892_512x512_fill_lanczos_center_3.png",
+    "src": "/thefootballforecaster/media/icon_hue3d685655c84c625d5ace1882e0e1f92_410892_512x512_fill_lanczos_center_3.png",
     "sizes": "512x512",
     "type": "image/png"
      }],
   "display": "standalone",
-  "start_url": "/?utm_source=web_app_manifest"
+  "start_url": "/thefootballforecaster/?utm_source=web_app_manifest"
 }
