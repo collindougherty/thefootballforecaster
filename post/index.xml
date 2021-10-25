@@ -68,7 +68,7 @@ worstgames &amp;lt;- newlogs %&amp;gt;% filter(Differential&amp;gt;64)&lt;/code&
     panel.grid.minor = element_blank()
     )&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://collindougherty.github.io/thefootballforecaster/post/biggest-losses-of-2019/index.en_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Yikes. It seems these teams had reason to hang their heads.&lt;/p&gt;
+&lt;p&gt;Yikes. It seems these teams had reason to hang their heads. Sad Saturday indeed.&lt;/p&gt;
 </description>
     </item>
     
