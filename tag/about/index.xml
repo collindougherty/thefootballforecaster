@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About | The Football Forecaster</title>
+    <link>https://collindougherty.github.io/thefootballforecaster/tag/about/</link>
+      <atom:link href="https://collindougherty.github.io/thefootballforecaster/tag/about/index.xml" rel="self" type="application/rss+xml" />
+    <description>About</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 16 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://collindougherty.github.io/thefootballforecaster/media/icon_hue3d685655c84c625d5ace1882e0e1f92_410892_512x512_fill_lanczos_center_3.png</url>
+      <title>About</title>
+      <link>https://collindougherty.github.io/thefootballforecaster/tag/about/</link>
+    </image>
+    
+    <item>
+      <title>About The Football Forecaster</title>
+      <link>https://collindougherty.github.io/thefootballforecaster/post/about-the-football-forecaster/</link>
+      <pubDate>Sat, 16 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://collindougherty.github.io/thefootballforecaster/post/about-the-football-forecaster/</guid>
+      <description>
+&lt;script src=&#34;https://collindougherty.github.io/thefootballforecaster/post/about-the-football-forecaster/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2021 | The Football Forecaster</title>
+    <link>https://collindougherty.github.io/thefootballforecaster/tag/2021/</link>
+      <atom:link href="https://collindougherty.github.io/thefootballforecaster/tag/2021/index.xml" rel="self" type="application/rss+xml" />
+    <description>2021</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 26 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://collindougherty.github.io/thefootballforecaster/media/icon_hue3d685655c84c625d5ace1882e0e1f92_410892_512x512_fill_lanczos_center_3.png</url>
+      <title>2021</title>
+      <link>https://collindougherty.github.io/thefootballforecaster/tag/2021/</link>
+    </image>
+    
+    <item>
+      <title>Power Rankings 2021</title>
+      <link>https://collindougherty.github.io/thefootballforecaster/post/power-rankings-2021/</link>
+      <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://collindougherty.github.io/thefootballforecaster/post/power-rankings-2021/</guid>
+      <description>
+&lt;script src=&#34;https://collindougherty.github.io/thefootballforecaster/post/power-rankings-2021/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Stay tuned for the latest power rankings… Coming soon.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
