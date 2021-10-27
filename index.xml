@@ -589,6 +589,9 @@ worstgames &amp;lt;- newlogs %&amp;gt;% filter(Differential&amp;gt;64)&lt;/code&
 &lt;script src=&#34;https://collindougherty.github.io/thefootballforecaster/post/about-the-football-forecaster/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
+&lt;p&gt;Welcome to The Football Forecaster! This page will be updated as I progress in the development of college football power rankings with important terminology, explanations, and more.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Collin Dougherty is a senior undergraduate at the University of Nebraska-Lincoln studying mathematics and psychology. He is particularly interested in how data can be used in a wide variety of fields, including sports analytics, bitcoin, and surveys. He worked in the field of sports analytics with the University of Nebraska. Learn more about Collin &lt;a href=&#34;https://collindougherty.github.io/&#34;&gt;here.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
