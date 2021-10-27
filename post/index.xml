@@ -34,13 +34,26 @@
 &lt;script src=&#34;https://collindougherty.github.io/thefootballforecaster/post/nebraska-cursed-or-consistent/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;The 2021 season has been cliche Nebraska football under Scott Frost. Frost has raised his total losses in one score games to 17 since becoming the coach at Nebraska, with a record of 5-17 in such contests. Husker fans continue to debate whether or not the team is making progress. Any progress that has been made is hidden underneath an ugly 3-5 record, placing the Huskers last in the Big Ten West. But under the surface, a much more optimistic picture does indeed appear.&lt;/p&gt;
-&lt;div id=&#34;jeekggwvta&#34; style=&#34;overflow-x:auto;overflow-y:auto;width:auto;height:auto;&#34;&gt;
+&lt;p&gt;The 2021 season has been quintessential Nebraska football under Scott Frost. Frost has raised his total losses in one score games to 17 since becoming the coach at Nebraska, with a record of 5-17 in such contests. Husker fans continue to debate whether or not his team is making progress. Any progress that has been made is hidden underneath an ugly 3-5 record, placing the Huskers last in the Big Ten West. But under the surface, a much more optimistic picture does indeed appear.&lt;/p&gt;
+&lt;p&gt;Many Nebraska fans have begun to complain louder and louder, and Frost’s seat is growing warmer by the loss. While Athletic Director Trev Alberts has expressed support and indicated that he is pleased with the improvements that have been made, many fans are left asking, “what improvements”? After all, the Huskers have a record of 3-5 as of today, and their best season was arguably Frost’s first.&lt;/p&gt;
+&lt;p&gt;Every season experiences fluke outcomes. Is it possible that Nebraska has just been really unlucky? Cursed, even? That’s the question we set out to answer today. Between calls of “joint possession” and “defensive delay of game”, there is reason to expect the Huskers have been at least a little unlucky.&lt;/p&gt;
+&lt;p&gt;Using data from &lt;a href=&#34;collegefootballdata.com&#34;&gt;collegefootballdata.com&lt;/a&gt;, I was able to run a simple linear regression which was able to predict 83% of 2019 games accurately in a backwards-looking fashion. For example, given all the games of 2019 and the stats of each game, it was able to correctly predict the outcome of the game, based only on its statistics, 83% of the time. The model is based on 3 factors which were highly predictive and independent: Predicted Points Added, Success Rate, and Explosiveness. I have dubbed this ‘The Triadic Model of College Football’. The three factors which make up the Triadic Model are briefly described here.&lt;/p&gt;
+&lt;p&gt;Predicted Points Added: “PPA uses Expected Points to measure the outcome of a play. It takes the EP value from the beginning of a play (e.g. 2nd and 5 at the 50) and subtracts it from the EP value resulting from the play (e.g. rush for 10 yards results in 1st and 10 from the 40).” &lt;a href=&#34;https://collegefootballdata.com/Glossary&#34;&gt;[Credit.]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Success Rate: The success rate of a play is well defined in college football analytics circles. A successful play counts as any of the following:
+- Gaining 50% of the yardage to go on 1st down
+- Gaining 70% of the yardage to go on 2nd down
+- Gaining 100% of the yardage to go on 3rd down
+The success rate is thus the number of successful plays divided by the sum of all plays.&lt;/p&gt;
+&lt;p&gt;Explosiveness: “Explosiveness measures the average EPA on plays which were marked as successful. It uses &lt;a href=&#34;https://collegefootballdata.com/Glossary&#34;&gt;this site’s&lt;/a&gt; EPA implementation (known as PPA).” &lt;a href=&#34;https://collegefootballdata.com/Glossary&#34;&gt;[Credit.]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In sum, these three factors are all positively correlated with winning. More successful plays, explosiveness, and predicted points added all correlate to more points scored. The inverse applies for defenses. When running the Triadic Model, we can not only predict wins and losses, but even specific scores, with a high degree of accuracy. The Triadic Model is simple, it excludes garbage time (Garbage Time occurs when one of the following scenarios is met: Scoring margin is 38+ points in the 2nd quarter, 28+ points in the 3rd quarter, or 22+ points in the 4th quarter), and it doesn’t factor in turnovers or special teams, which are demonstrably key aspects of winning. But, sometimes simple models are just as good, and an 83% accuracy rating seems to point in this direction.&lt;/p&gt;
+&lt;p&gt;At some point in the future, I hope to incorporate turnover and special teams stats, which should help increase accuracy even more. It would also be worthwhile to consider garbage time stats, as a backwards-looking model is only interested in what actually happened. The model without garbage time stats should come in handy later on, when looking to predict how a team will do in future games. By way of example, the current model is known to underestimate scoring margins in blowouts because of the exclusion of garbage time stats.&lt;/p&gt;
+&lt;p&gt;Without further ado, let’s dive into what the Triadic Model has to say about the Huskers 2021 season.&lt;/p&gt;
+&lt;div id=&#34;hkcgywzdbf&#34; style=&#34;overflow-x:auto;overflow-y:auto;width:auto;height:auto;&#34;&gt;
 &lt;style&gt;html {
   font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Oxygen, Ubuntu, Cantarell, &#39;Helvetica Neue&#39;, &#39;Fira Sans&#39;, &#39;Droid Sans&#39;, Arial, sans-serif;
 }
 
-#jeekggwvta .gt_table {
+#hkcgywzdbf .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -65,7 +78,7 @@
   border-left-color: #D3D3D3;
 }
 
-#jeekggwvta .gt_heading {
+#hkcgywzdbf .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -77,7 +90,7 @@
   border-right-color: #D3D3D3;
 }
 
-#jeekggwvta .gt_title {
+#hkcgywzdbf .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -87,7 +100,7 @@
   border-bottom-width: 0;
 }
 
-#jeekggwvta .gt_subtitle {
+#hkcgywzdbf .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -97,13 +110,13 @@
   border-top-width: 0;
 }
 
-#jeekggwvta .gt_bottom_border {
+#hkcgywzdbf .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jeekggwvta .gt_col_headings {
+#hkcgywzdbf .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -118,7 +131,7 @@
   border-right-color: #D3D3D3;
 }
 
-#jeekggwvta .gt_col_heading {
+#hkcgywzdbf .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -138,7 +151,7 @@
   overflow-x: hidden;
 }
 
-#jeekggwvta .gt_column_spanner_outer {
+#hkcgywzdbf .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -150,15 +163,15 @@
   padding-right: 4px;
 }
 
-#jeekggwvta .gt_column_spanner_outer:first-child {
+#hkcgywzdbf .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jeekggwvta .gt_column_spanner_outer:last-child {
+#hkcgywzdbf .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jeekggwvta .gt_column_spanner {
+#hkcgywzdbf .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -170,7 +183,7 @@
   width: 100%;
 }
 
-#jeekggwvta .gt_group_heading {
+#hkcgywzdbf .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -192,7 +205,7 @@
   vertical-align: middle;
 }
 
-#jeekggwvta .gt_empty_group_heading {
+#hkcgywzdbf .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -207,15 +220,15 @@
   vertical-align: middle;
 }
 
-#jeekggwvta .gt_from_md &gt; :first-child {
+#hkcgywzdbf .gt_from_md &gt; :first-child {
   margin-top: 0;
 }
 
-#jeekggwvta .gt_from_md &gt; :last-child {
+#hkcgywzdbf .gt_from_md &gt; :last-child {
   margin-bottom: 0;
 }
 
-#jeekggwvta .gt_row {
+#hkcgywzdbf .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -234,7 +247,7 @@
   overflow-x: hidden;
 }
 
-#jeekggwvta .gt_stub {
+#hkcgywzdbf .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -246,7 +259,7 @@
   padding-left: 12px;
 }
 
-#jeekggwvta .gt_summary_row {
+#hkcgywzdbf .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -256,7 +269,7 @@
   padding-right: 5px;
 }
 
-#jeekggwvta .gt_first_summary_row {
+#hkcgywzdbf .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -266,7 +279,7 @@
   border-top-color: #D3D3D3;
 }
 
-#jeekggwvta .gt_grand_summary_row {
+#hkcgywzdbf .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -276,7 +289,7 @@
   padding-right: 5px;
 }
 
-#jeekggwvta .gt_first_grand_summary_row {
+#hkcgywzdbf .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -286,11 +299,11 @@
   border-top-color: #D3D3D3;
 }
 
-#jeekggwvta .gt_striped {
+#hkcgywzdbf .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jeekggwvta .gt_table_body {
+#hkcgywzdbf .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -299,7 +312,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#jeekggwvta .gt_footnotes {
+#hkcgywzdbf .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -313,13 +326,13 @@
   border-right-color: #D3D3D3;
 }
 
-#jeekggwvta .gt_footnote {
+#hkcgywzdbf .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#jeekggwvta .gt_sourcenotes {
+#hkcgywzdbf .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -333,41 +346,41 @@
   border-right-color: #D3D3D3;
 }
 
-#jeekggwvta .gt_sourcenote {
+#hkcgywzdbf .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#jeekggwvta .gt_left {
+#hkcgywzdbf .gt_left {
   text-align: left;
 }
 
-#jeekggwvta .gt_center {
+#hkcgywzdbf .gt_center {
   text-align: center;
 }
 
-#jeekggwvta .gt_right {
+#hkcgywzdbf .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jeekggwvta .gt_font_normal {
+#hkcgywzdbf .gt_font_normal {
   font-weight: normal;
 }
 
-#jeekggwvta .gt_font_bold {
+#hkcgywzdbf .gt_font_bold {
   font-weight: bold;
 }
 
-#jeekggwvta .gt_font_italic {
+#hkcgywzdbf .gt_font_italic {
   font-style: italic;
 }
 
-#jeekggwvta .gt_super {
+#hkcgywzdbf .gt_super {
   font-size: 65%;
 }
 
-#jeekggwvta .gt_footnote_marks {
+#hkcgywzdbf .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -423,8 +436,1146 @@
   
 &lt;/table&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&#34;https://collindougherty.github.io/thefootballforecaster/post/nebraska-cursed-or-consistent/index.en_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://collindougherty.github.io/thefootballforecaster/post/nebraska-cursed-or-consistent/index.en_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Perhaps unsurprisingly, the model indicates Nebraska has indeed underperformed. What may come as a surprise to many, however, is the margin by which that underperformance has come. Our model predicts a 6-2 record for the Cornhuskers. Given the strength of schedule faced to date (TeamRankings currently says it ranks 13th in difficulty, FPI currently ranks it 5th), the Huskers have played remarkably well. With a 6-2 record, a top 15 rating would likely follow. And yet the Huskers receive no votes for the top 25, sitting instead at a lowly 3-5, last in the Big Ten West.&lt;/p&gt;
+&lt;p&gt;The model predicts a nailbiting win against Michigan, a blowout win over Illinois, and a comfortable win against Michigan State on the road. It also feels confident the Huskers laid an egg against Minnesota, with a predicted loss on the road, and suggests maybe the Huskers were lucky to keep Oklahoma within one score based on how they played.&lt;/p&gt;
+&lt;p&gt;Let’s visualize the Huskers season further. Instead of looking at total yardage gained and allowed, we will look at yards per play and pards per play allowed. These stats help take into account pace of play and provide a more accurate picture of how a team is playing.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://collindougherty.github.io/thefootballforecaster/post/nebraska-cursed-or-consistent/index.en_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Nebraska, perhaps unsuprisingly at this point, finds itself among the better teams in college football when looking at YPP. But zooming in, we may be suprised at just how good their company is.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://collindougherty.github.io/thefootballforecaster/post/nebraska-cursed-or-consistent/index.en_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The Huskers nearest comparisons in YPP? #1. Georgia(7-0), #4. Ohio State(6-1), #2. Cincinnati(7-0), #3 Alabama(7-0), #8. Michigan State(7-0), #16 Baylor(6-1), #22. Iowa State(5-2), and only one unranked team, Florida(4-3), yes, the same Florida that took Alabama to the wire.&lt;/p&gt;
+&lt;p&gt;Looking even deeper, we see that not only has Nebraska badly underperformed, it is in fact one of only 3 teams to do so at such a dramatic clip this season, joining the ranks of Florida State and Western Kentucky.&lt;/p&gt;
+&lt;div id=&#34;qmadlvkncg&#34; style=&#34;overflow-x:auto;overflow-y:auto;width:auto;height:auto;&#34;&gt;
+&lt;style&gt;html {
+  font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Oxygen, Ubuntu, Cantarell, &#39;Helvetica Neue&#39;, &#39;Fira Sans&#39;, &#39;Droid Sans&#39;, Arial, sans-serif;
+}
+
+#qmadlvkncg .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#qmadlvkncg .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qmadlvkncg .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#qmadlvkncg .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#qmadlvkncg .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qmadlvkncg .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qmadlvkncg .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#qmadlvkncg .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#qmadlvkncg .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#qmadlvkncg .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#qmadlvkncg .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#qmadlvkncg .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#qmadlvkncg .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#qmadlvkncg .gt_from_md &gt; :first-child {
+  margin-top: 0;
+}
+
+#qmadlvkncg .gt_from_md &gt; :last-child {
+  margin-bottom: 0;
+}
+
+#qmadlvkncg .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#qmadlvkncg .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#qmadlvkncg .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qmadlvkncg .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#qmadlvkncg .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qmadlvkncg .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#qmadlvkncg .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#qmadlvkncg .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qmadlvkncg .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qmadlvkncg .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#qmadlvkncg .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qmadlvkncg .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#qmadlvkncg .gt_left {
+  text-align: left;
+}
+
+#qmadlvkncg .gt_center {
+  text-align: center;
+}
+
+#qmadlvkncg .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#qmadlvkncg .gt_font_normal {
+  font-weight: normal;
+}
+
+#qmadlvkncg .gt_font_bold {
+  font-weight: bold;
+}
+
+#qmadlvkncg .gt_font_italic {
+  font-style: italic;
+}
+
+#qmadlvkncg .gt_super {
+  font-size: 65%;
+}
+
+#qmadlvkncg .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+&lt;/style&gt;
+&lt;table class=&#34;gt_table&#34;&gt;
+  &lt;thead class=&#34;gt_header&#34;&gt;
+    &lt;tr&gt;
+      &lt;th colspan=&#34;3&#34; class=&#34;gt_heading gt_title gt_font_normal&#34; style=&#34;color: #000000; text-align: left; font-weight: bold;&#34;&gt;Huskers Keep Miserable Company&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th colspan=&#34;3&#34; class=&#34;gt_heading gt_subtitle gt_font_normal gt_bottom_border&#34; style=&#34;color: #000000; text-align: left;&#34;&gt;Only two other teams have underperformed as significantly as Nebraska&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;thead class=&#34;gt_col_headings&#34;&gt;
+    &lt;tr&gt;
+      &lt;th class=&#34;gt_col_heading gt_columns_bottom_border gt_left&#34; rowspan=&#34;1&#34; colspan=&#34;1&#34; style=&#34;border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;&#34;&gt;Team&lt;/th&gt;
+      &lt;th class=&#34;gt_col_heading gt_columns_bottom_border gt_right&#34; rowspan=&#34;1&#34; colspan=&#34;1&#34; style=&#34;border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;&#34;&gt;Predicted Wins&lt;/th&gt;
+      &lt;th class=&#34;gt_col_heading gt_columns_bottom_border gt_right&#34; rowspan=&#34;1&#34; colspan=&#34;1&#34; style=&#34;border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;&#34;&gt;Wins&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody class=&#34;gt_table_body&#34;&gt;
+    &lt;tr&gt;&lt;td class=&#34;gt_row gt_left&#34;&gt;Florida State&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_right&#34;&gt;6&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_right&#34;&gt;3&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td class=&#34;gt_row gt_left&#34; style=&#34;background-color: #FF0000; color: #000000;&#34;&gt;Nebraska&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_right&#34; style=&#34;background-color: #FF0000; color: #000000;&#34;&gt;6&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_right&#34; style=&#34;background-color: #FF0000; color: #000000;&#34;&gt;3&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td class=&#34;gt_row gt_left&#34;&gt;Western Kentucky&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_right&#34;&gt;5&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_right&#34;&gt;2&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot class=&#34;gt_sourcenotes&#34;&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_sourcenote&#34; colspan=&#34;3&#34;&gt;&lt;strong&gt;By:&lt;/strong&gt; Collin Dougherty&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+  
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;And for the Husker fans who have hope that this will revert over the course of the season, perhaps it is noteworthy that only one remaining opponent - Iowa - has overperformed. Yes, even Ohio State has underperformed at 6-1, with the model suggesting they deserved to win against Oregon. The Huskers will face stiff tests these next four games. More optimistically, the numbers suggest they should be able to hang with all of them.&lt;/p&gt;
+&lt;div id=&#34;cioeuuohsg&#34; style=&#34;overflow-x:auto;overflow-y:auto;width:auto;height:auto;&#34;&gt;
+&lt;style&gt;html {
+  font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Oxygen, Ubuntu, Cantarell, &#39;Helvetica Neue&#39;, &#39;Fira Sans&#39;, &#39;Droid Sans&#39;, Arial, sans-serif;
+}
+
+#cioeuuohsg .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#cioeuuohsg .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#cioeuuohsg .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#cioeuuohsg .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#cioeuuohsg .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cioeuuohsg .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#cioeuuohsg .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#cioeuuohsg .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#cioeuuohsg .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#cioeuuohsg .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#cioeuuohsg .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#cioeuuohsg .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#cioeuuohsg .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#cioeuuohsg .gt_from_md &gt; :first-child {
+  margin-top: 0;
+}
+
+#cioeuuohsg .gt_from_md &gt; :last-child {
+  margin-bottom: 0;
+}
+
+#cioeuuohsg .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#cioeuuohsg .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#cioeuuohsg .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cioeuuohsg .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#cioeuuohsg .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cioeuuohsg .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#cioeuuohsg .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#cioeuuohsg .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cioeuuohsg .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#cioeuuohsg .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#cioeuuohsg .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#cioeuuohsg .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#cioeuuohsg .gt_left {
+  text-align: left;
+}
+
+#cioeuuohsg .gt_center {
+  text-align: center;
+}
+
+#cioeuuohsg .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#cioeuuohsg .gt_font_normal {
+  font-weight: normal;
+}
+
+#cioeuuohsg .gt_font_bold {
+  font-weight: bold;
+}
+
+#cioeuuohsg .gt_font_italic {
+  font-style: italic;
+}
+
+#cioeuuohsg .gt_super {
+  font-size: 65%;
+}
+
+#cioeuuohsg .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+&lt;/style&gt;
+&lt;table class=&#34;gt_table&#34;&gt;
+  &lt;thead class=&#34;gt_header&#34;&gt;
+    &lt;tr&gt;
+      &lt;th colspan=&#34;3&#34; class=&#34;gt_heading gt_title gt_font_normal&#34; style=&#34;color: #000000; text-align: left; font-weight: bold;&#34;&gt;Remaining Nebraska Opponents Have Mostly Underperformed&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th colspan=&#34;3&#34; class=&#34;gt_heading gt_subtitle gt_font_normal gt_bottom_border&#34; style=&#34;color: #000000; text-align: left;&#34;&gt;Two of Nebraska&#39;s Four Remaining Opponents Are Better Than Their Records, With One Notable Exception.&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;thead class=&#34;gt_col_headings&#34;&gt;
+    &lt;tr&gt;
+      &lt;th class=&#34;gt_col_heading gt_columns_bottom_border gt_left&#34; rowspan=&#34;1&#34; colspan=&#34;1&#34; style=&#34;border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;&#34;&gt;Team&lt;/th&gt;
+      &lt;th class=&#34;gt_col_heading gt_columns_bottom_border gt_right&#34; rowspan=&#34;1&#34; colspan=&#34;1&#34; style=&#34;border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;&#34;&gt;Predicted Wins&lt;/th&gt;
+      &lt;th class=&#34;gt_col_heading gt_columns_bottom_border gt_right&#34; rowspan=&#34;1&#34; colspan=&#34;1&#34; style=&#34;border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;&#34;&gt;Wins&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody class=&#34;gt_table_body&#34;&gt;
+    &lt;tr&gt;&lt;td class=&#34;gt_row gt_left&#34;&gt;Iowa&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_right&#34;&gt;4&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_right&#34;&gt;6&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td class=&#34;gt_row gt_left&#34;&gt;Ohio State&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_right&#34;&gt;7&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_right&#34;&gt;6&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td class=&#34;gt_row gt_left&#34;&gt;Purdue&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_right&#34;&gt;5&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_right&#34;&gt;4&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td class=&#34;gt_row gt_left&#34;&gt;Wisconsin&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_right&#34;&gt;4&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_right&#34;&gt;4&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot class=&#34;gt_sourcenotes&#34;&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_sourcenote&#34; colspan=&#34;3&#34;&gt;&lt;strong&gt;By:&lt;/strong&gt; Collin Dougherty&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+  
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;While it would be tempting to chalk up this season’s record entirely to bad luck and assume that the football gods will be more merciful next season, it is worth considering that this trend holds over the entirety of Scott Frost’s tenure at Nebraska. While Frost has gone a mere 15-25, the stats suggest his teams played at more of a 23-17 clip.&lt;/p&gt;
+&lt;div id=&#34;zkhuvkzjzo&#34; style=&#34;overflow-x:auto;overflow-y:auto;width:auto;height:auto;&#34;&gt;
+&lt;style&gt;html {
+  font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Oxygen, Ubuntu, Cantarell, &#39;Helvetica Neue&#39;, &#39;Fira Sans&#39;, &#39;Droid Sans&#39;, Arial, sans-serif;
+}
+
+#zkhuvkzjzo .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#zkhuvkzjzo .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#zkhuvkzjzo .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#zkhuvkzjzo .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#zkhuvkzjzo .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zkhuvkzjzo .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#zkhuvkzjzo .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#zkhuvkzjzo .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#zkhuvkzjzo .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#zkhuvkzjzo .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#zkhuvkzjzo .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#zkhuvkzjzo .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#zkhuvkzjzo .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#zkhuvkzjzo .gt_from_md &gt; :first-child {
+  margin-top: 0;
+}
+
+#zkhuvkzjzo .gt_from_md &gt; :last-child {
+  margin-bottom: 0;
+}
+
+#zkhuvkzjzo .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#zkhuvkzjzo .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#zkhuvkzjzo .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zkhuvkzjzo .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#zkhuvkzjzo .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zkhuvkzjzo .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#zkhuvkzjzo .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#zkhuvkzjzo .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zkhuvkzjzo .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#zkhuvkzjzo .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#zkhuvkzjzo .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#zkhuvkzjzo .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#zkhuvkzjzo .gt_left {
+  text-align: left;
+}
+
+#zkhuvkzjzo .gt_center {
+  text-align: center;
+}
+
+#zkhuvkzjzo .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#zkhuvkzjzo .gt_font_normal {
+  font-weight: normal;
+}
+
+#zkhuvkzjzo .gt_font_bold {
+  font-weight: bold;
+}
+
+#zkhuvkzjzo .gt_font_italic {
+  font-style: italic;
+}
+
+#zkhuvkzjzo .gt_super {
+  font-size: 65%;
+}
+
+#zkhuvkzjzo .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+&lt;/style&gt;
+&lt;table class=&#34;gt_table&#34;&gt;
+  &lt;thead class=&#34;gt_header&#34;&gt;
+    &lt;tr&gt;
+      &lt;th colspan=&#34;3&#34; class=&#34;gt_heading gt_title gt_font_normal&#34; style=&#34;color: #000000; text-align: left; font-weight: bold;&#34;&gt;Computer Modeling Says Nebraska Has Underperformed for Several Seasons&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th colspan=&#34;3&#34; class=&#34;gt_heading gt_subtitle gt_font_normal gt_bottom_border&#34; style=&#34;color: #000000; text-align: left;&#34;&gt;2021 isn&#39;t a fluke, the Huskers can&#39;t seem to get it done.&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;thead class=&#34;gt_col_headings&#34;&gt;
+    &lt;tr&gt;
+      &lt;th class=&#34;gt_col_heading gt_columns_bottom_border gt_left&#34; rowspan=&#34;1&#34; colspan=&#34;1&#34; style=&#34;border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;&#34;&gt;Team&lt;/th&gt;
+      &lt;th class=&#34;gt_col_heading gt_columns_bottom_border gt_left&#34; rowspan=&#34;1&#34; colspan=&#34;1&#34; style=&#34;border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;&#34;&gt;Predicted Record&lt;/th&gt;
+      &lt;th class=&#34;gt_col_heading gt_columns_bottom_border gt_left&#34; rowspan=&#34;1&#34; colspan=&#34;1&#34; style=&#34;border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;&#34;&gt;Record&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody class=&#34;gt_table_body&#34;&gt;
+    &lt;tr&gt;&lt;td class=&#34;gt_row gt_left&#34;&gt;Nebraska 2018&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_left&#34;&gt;8 - 4&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_left&#34;&gt;4 - 8&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td class=&#34;gt_row gt_left&#34;&gt;Nebraska 2019&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_left&#34;&gt;6 - 6&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_left&#34;&gt;5 - 7&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td class=&#34;gt_row gt_left&#34;&gt;Nebraska 2020&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_left&#34;&gt;3 - 5&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_left&#34;&gt;3 - 5&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td class=&#34;gt_row gt_left&#34;&gt;Nebraska 2021&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_left&#34;&gt;6 - 2&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_left&#34;&gt;3 - 5&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td class=&#34;gt_row gt_left&#34; style=&#34;background-color: #FF0000; color: #000000;&#34;&gt;Nebraska 2018-2021&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_left&#34; style=&#34;background-color: #FF0000; color: #000000;&#34;&gt;23 - 17&lt;/td&gt;
+&lt;td class=&#34;gt_row gt_left&#34; style=&#34;background-color: #FF0000; color: #000000;&#34;&gt;15 - 25&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot class=&#34;gt_sourcenotes&#34;&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_sourcenote&#34; colspan=&#34;3&#34;&gt;&lt;strong&gt;By:&lt;/strong&gt; Collin Dougherty&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+  
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;Considering Nebraska’s 5-17 record in one score games under Frost, a reversion to winning 50% of those games, as is typical in football, or going 11-11, would place his record at 21-19.&lt;/p&gt;
+&lt;p&gt;The Husker pundits will continue debating what needs to be changed - culture, offensive line, special teams, etc. - and rightfully so. The Huskers have several glaring holes that can be greatly improved. But it seems they have everything they need to perform at a highly successful level in the here and now. I leave the question then to the reader: is Nebraska cursed? Or is this just who they are?&lt;/p&gt;
 </description>
     </item>
     
