@@ -35,12 +35,12 @@ The success rate is thus the number of successful plays divided by the sum of al
 &lt;p&gt;In sum, these three factors are all positively correlated with winning. More successful plays, explosiveness, and predicted points added all correlate to more points scored. The inverse applies for defenses. When running the Triadic Model, we can not only predict wins and losses, but even specific scores, with a high degree of accuracy. The Triadic Model is simple, it excludes garbage time (Garbage Time occurs when one of the following scenarios is met: Scoring margin is 38+ points in the 2nd quarter, 28+ points in the 3rd quarter, or 22+ points in the 4th quarter), and it doesn’t factor in turnovers or special teams, which are demonstrably key aspects of winning. But, sometimes simple models are just as good, and an 83% accuracy rating seems to point in this direction.&lt;/p&gt;
 &lt;p&gt;At some point in the future, I hope to incorporate turnover and special teams stats, which should help increase accuracy even more. It would also be worthwhile to consider garbage time stats, as a backwards-looking model is only interested in what actually happened. The model without garbage time stats should come in handy later on, when looking to predict how a team will do in future games. By way of example, the current model is known to underestimate scoring margins in blowouts because of the exclusion of garbage time stats.&lt;/p&gt;
 &lt;p&gt;Without further ado, let’s dive into what the Triadic Model has to say about the Huskers 2021 season.&lt;/p&gt;
-&lt;div id=&#34;ogrrsvcrwq&#34; style=&#34;overflow-x:auto;overflow-y:auto;width:auto;height:auto;&#34;&gt;
+&lt;div id=&#34;icgxnheaqq&#34; style=&#34;overflow-x:auto;overflow-y:auto;width:auto;height:auto;&#34;&gt;
 &lt;style&gt;html {
   font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Oxygen, Ubuntu, Cantarell, &#39;Helvetica Neue&#39;, &#39;Fira Sans&#39;, &#39;Droid Sans&#39;, Arial, sans-serif;
 }
 
-#ogrrsvcrwq .gt_table {
+#icgxnheaqq .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -65,7 +65,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-left-color: #D3D3D3;
 }
 
-#ogrrsvcrwq .gt_heading {
+#icgxnheaqq .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -77,7 +77,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-right-color: #D3D3D3;
 }
 
-#ogrrsvcrwq .gt_title {
+#icgxnheaqq .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -87,7 +87,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-bottom-width: 0;
 }
 
-#ogrrsvcrwq .gt_subtitle {
+#icgxnheaqq .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -97,13 +97,13 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-top-width: 0;
 }
 
-#ogrrsvcrwq .gt_bottom_border {
+#icgxnheaqq .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ogrrsvcrwq .gt_col_headings {
+#icgxnheaqq .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -118,7 +118,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-right-color: #D3D3D3;
 }
 
-#ogrrsvcrwq .gt_col_heading {
+#icgxnheaqq .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -138,7 +138,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   overflow-x: hidden;
 }
 
-#ogrrsvcrwq .gt_column_spanner_outer {
+#icgxnheaqq .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -150,15 +150,15 @@ The success rate is thus the number of successful plays divided by the sum of al
   padding-right: 4px;
 }
 
-#ogrrsvcrwq .gt_column_spanner_outer:first-child {
+#icgxnheaqq .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ogrrsvcrwq .gt_column_spanner_outer:last-child {
+#icgxnheaqq .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ogrrsvcrwq .gt_column_spanner {
+#icgxnheaqq .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -170,7 +170,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   width: 100%;
 }
 
-#ogrrsvcrwq .gt_group_heading {
+#icgxnheaqq .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -192,7 +192,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   vertical-align: middle;
 }
 
-#ogrrsvcrwq .gt_empty_group_heading {
+#icgxnheaqq .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -207,15 +207,15 @@ The success rate is thus the number of successful plays divided by the sum of al
   vertical-align: middle;
 }
 
-#ogrrsvcrwq .gt_from_md &gt; :first-child {
+#icgxnheaqq .gt_from_md &gt; :first-child {
   margin-top: 0;
 }
 
-#ogrrsvcrwq .gt_from_md &gt; :last-child {
+#icgxnheaqq .gt_from_md &gt; :last-child {
   margin-bottom: 0;
 }
 
-#ogrrsvcrwq .gt_row {
+#icgxnheaqq .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -234,7 +234,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   overflow-x: hidden;
 }
 
-#ogrrsvcrwq .gt_stub {
+#icgxnheaqq .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -246,7 +246,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   padding-left: 12px;
 }
 
-#ogrrsvcrwq .gt_summary_row {
+#icgxnheaqq .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -256,7 +256,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   padding-right: 5px;
 }
 
-#ogrrsvcrwq .gt_first_summary_row {
+#icgxnheaqq .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -266,7 +266,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-top-color: #D3D3D3;
 }
 
-#ogrrsvcrwq .gt_grand_summary_row {
+#icgxnheaqq .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -276,7 +276,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   padding-right: 5px;
 }
 
-#ogrrsvcrwq .gt_first_grand_summary_row {
+#icgxnheaqq .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -286,11 +286,11 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-top-color: #D3D3D3;
 }
 
-#ogrrsvcrwq .gt_striped {
+#icgxnheaqq .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ogrrsvcrwq .gt_table_body {
+#icgxnheaqq .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -299,7 +299,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-bottom-color: #D3D3D3;
 }
 
-#ogrrsvcrwq .gt_footnotes {
+#icgxnheaqq .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -313,13 +313,13 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-right-color: #D3D3D3;
 }
 
-#ogrrsvcrwq .gt_footnote {
+#icgxnheaqq .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#ogrrsvcrwq .gt_sourcenotes {
+#icgxnheaqq .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -333,41 +333,41 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-right-color: #D3D3D3;
 }
 
-#ogrrsvcrwq .gt_sourcenote {
+#icgxnheaqq .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#ogrrsvcrwq .gt_left {
+#icgxnheaqq .gt_left {
   text-align: left;
 }
 
-#ogrrsvcrwq .gt_center {
+#icgxnheaqq .gt_center {
   text-align: center;
 }
 
-#ogrrsvcrwq .gt_right {
+#icgxnheaqq .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ogrrsvcrwq .gt_font_normal {
+#icgxnheaqq .gt_font_normal {
   font-weight: normal;
 }
 
-#ogrrsvcrwq .gt_font_bold {
+#icgxnheaqq .gt_font_bold {
   font-weight: bold;
 }
 
-#ogrrsvcrwq .gt_font_italic {
+#icgxnheaqq .gt_font_italic {
   font-style: italic;
 }
 
-#ogrrsvcrwq .gt_super {
+#icgxnheaqq .gt_super {
   font-size: 65%;
 }
 
-#ogrrsvcrwq .gt_footnote_marks {
+#icgxnheaqq .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -431,12 +431,12 @@ The success rate is thus the number of successful plays divided by the sum of al
 &lt;p&gt;&lt;img src=&#34;https://collindougherty.github.io/thefootballforecaster/post/nebraska-cursed-or-consistent/index.en_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;The Huskers nearest comparisons in YPP? #1. Georgia(7-0), #4. Ohio State(6-1), #2. Cincinnati(7-0), #3 Alabama(7-0), #8. Michigan State(7-0), #16 Baylor(6-1), #22. Iowa State(5-2), and only one unranked team, Florida(4-3), yes, the same Florida that took Alabama to the wire.&lt;/p&gt;
 &lt;p&gt;Looking even deeper, we see that not only has Nebraska badly underperformed, it is in fact one of only 3 teams to do so at such a dramatic clip this season, joining the ranks of Florida State and Western Kentucky.&lt;/p&gt;
-&lt;div id=&#34;mmrzabvbqe&#34; style=&#34;overflow-x:auto;overflow-y:auto;width:auto;height:auto;&#34;&gt;
+&lt;div id=&#34;stfkofuyop&#34; style=&#34;overflow-x:auto;overflow-y:auto;width:auto;height:auto;&#34;&gt;
 &lt;style&gt;html {
   font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Oxygen, Ubuntu, Cantarell, &#39;Helvetica Neue&#39;, &#39;Fira Sans&#39;, &#39;Droid Sans&#39;, Arial, sans-serif;
 }
 
-#mmrzabvbqe .gt_table {
+#stfkofuyop .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -461,7 +461,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-left-color: #D3D3D3;
 }
 
-#mmrzabvbqe .gt_heading {
+#stfkofuyop .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -473,7 +473,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-right-color: #D3D3D3;
 }
 
-#mmrzabvbqe .gt_title {
+#stfkofuyop .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -483,7 +483,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-bottom-width: 0;
 }
 
-#mmrzabvbqe .gt_subtitle {
+#stfkofuyop .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -493,13 +493,13 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-top-width: 0;
 }
 
-#mmrzabvbqe .gt_bottom_border {
+#stfkofuyop .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#mmrzabvbqe .gt_col_headings {
+#stfkofuyop .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -514,7 +514,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-right-color: #D3D3D3;
 }
 
-#mmrzabvbqe .gt_col_heading {
+#stfkofuyop .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -534,7 +534,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   overflow-x: hidden;
 }
 
-#mmrzabvbqe .gt_column_spanner_outer {
+#stfkofuyop .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -546,15 +546,15 @@ The success rate is thus the number of successful plays divided by the sum of al
   padding-right: 4px;
 }
 
-#mmrzabvbqe .gt_column_spanner_outer:first-child {
+#stfkofuyop .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#mmrzabvbqe .gt_column_spanner_outer:last-child {
+#stfkofuyop .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#mmrzabvbqe .gt_column_spanner {
+#stfkofuyop .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -566,7 +566,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   width: 100%;
 }
 
-#mmrzabvbqe .gt_group_heading {
+#stfkofuyop .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -588,7 +588,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   vertical-align: middle;
 }
 
-#mmrzabvbqe .gt_empty_group_heading {
+#stfkofuyop .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -603,15 +603,15 @@ The success rate is thus the number of successful plays divided by the sum of al
   vertical-align: middle;
 }
 
-#mmrzabvbqe .gt_from_md &gt; :first-child {
+#stfkofuyop .gt_from_md &gt; :first-child {
   margin-top: 0;
 }
 
-#mmrzabvbqe .gt_from_md &gt; :last-child {
+#stfkofuyop .gt_from_md &gt; :last-child {
   margin-bottom: 0;
 }
 
-#mmrzabvbqe .gt_row {
+#stfkofuyop .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -630,7 +630,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   overflow-x: hidden;
 }
 
-#mmrzabvbqe .gt_stub {
+#stfkofuyop .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -642,7 +642,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   padding-left: 12px;
 }
 
-#mmrzabvbqe .gt_summary_row {
+#stfkofuyop .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -652,7 +652,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   padding-right: 5px;
 }
 
-#mmrzabvbqe .gt_first_summary_row {
+#stfkofuyop .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -662,7 +662,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-top-color: #D3D3D3;
 }
 
-#mmrzabvbqe .gt_grand_summary_row {
+#stfkofuyop .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -672,7 +672,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   padding-right: 5px;
 }
 
-#mmrzabvbqe .gt_first_grand_summary_row {
+#stfkofuyop .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -682,11 +682,11 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-top-color: #D3D3D3;
 }
 
-#mmrzabvbqe .gt_striped {
+#stfkofuyop .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#mmrzabvbqe .gt_table_body {
+#stfkofuyop .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -695,7 +695,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-bottom-color: #D3D3D3;
 }
 
-#mmrzabvbqe .gt_footnotes {
+#stfkofuyop .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -709,13 +709,13 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-right-color: #D3D3D3;
 }
 
-#mmrzabvbqe .gt_footnote {
+#stfkofuyop .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#mmrzabvbqe .gt_sourcenotes {
+#stfkofuyop .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -729,41 +729,41 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-right-color: #D3D3D3;
 }
 
-#mmrzabvbqe .gt_sourcenote {
+#stfkofuyop .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#mmrzabvbqe .gt_left {
+#stfkofuyop .gt_left {
   text-align: left;
 }
 
-#mmrzabvbqe .gt_center {
+#stfkofuyop .gt_center {
   text-align: center;
 }
 
-#mmrzabvbqe .gt_right {
+#stfkofuyop .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#mmrzabvbqe .gt_font_normal {
+#stfkofuyop .gt_font_normal {
   font-weight: normal;
 }
 
-#mmrzabvbqe .gt_font_bold {
+#stfkofuyop .gt_font_bold {
   font-weight: bold;
 }
 
-#mmrzabvbqe .gt_font_italic {
+#stfkofuyop .gt_font_italic {
   font-style: italic;
 }
 
-#mmrzabvbqe .gt_super {
+#stfkofuyop .gt_super {
   font-size: 65%;
 }
 
-#mmrzabvbqe .gt_footnote_marks {
+#stfkofuyop .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -805,12 +805,12 @@ The success rate is thus the number of successful plays divided by the sum of al
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;p&gt;And for the Husker fans who have hope that this will revert over the course of the season, perhaps it is noteworthy that only one remaining opponent - Iowa - has overperformed. Yes, even Ohio State has underperformed at 6-1, with the model suggesting they deserved to win against Oregon. The Huskers will face stiff tests these next four games. More optimistically, the numbers suggest they should be able to hang with all of them.&lt;/p&gt;
-&lt;div id=&#34;bjgvhhgxhb&#34; style=&#34;overflow-x:auto;overflow-y:auto;width:auto;height:auto;&#34;&gt;
+&lt;div id=&#34;gfymmtcyvo&#34; style=&#34;overflow-x:auto;overflow-y:auto;width:auto;height:auto;&#34;&gt;
 &lt;style&gt;html {
   font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Oxygen, Ubuntu, Cantarell, &#39;Helvetica Neue&#39;, &#39;Fira Sans&#39;, &#39;Droid Sans&#39;, Arial, sans-serif;
 }
 
-#bjgvhhgxhb .gt_table {
+#gfymmtcyvo .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -835,7 +835,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-left-color: #D3D3D3;
 }
 
-#bjgvhhgxhb .gt_heading {
+#gfymmtcyvo .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -847,7 +847,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-right-color: #D3D3D3;
 }
 
-#bjgvhhgxhb .gt_title {
+#gfymmtcyvo .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -857,7 +857,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-bottom-width: 0;
 }
 
-#bjgvhhgxhb .gt_subtitle {
+#gfymmtcyvo .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -867,13 +867,13 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-top-width: 0;
 }
 
-#bjgvhhgxhb .gt_bottom_border {
+#gfymmtcyvo .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#bjgvhhgxhb .gt_col_headings {
+#gfymmtcyvo .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -888,7 +888,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-right-color: #D3D3D3;
 }
 
-#bjgvhhgxhb .gt_col_heading {
+#gfymmtcyvo .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -908,7 +908,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   overflow-x: hidden;
 }
 
-#bjgvhhgxhb .gt_column_spanner_outer {
+#gfymmtcyvo .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -920,15 +920,15 @@ The success rate is thus the number of successful plays divided by the sum of al
   padding-right: 4px;
 }
 
-#bjgvhhgxhb .gt_column_spanner_outer:first-child {
+#gfymmtcyvo .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#bjgvhhgxhb .gt_column_spanner_outer:last-child {
+#gfymmtcyvo .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#bjgvhhgxhb .gt_column_spanner {
+#gfymmtcyvo .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -940,7 +940,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   width: 100%;
 }
 
-#bjgvhhgxhb .gt_group_heading {
+#gfymmtcyvo .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -962,7 +962,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   vertical-align: middle;
 }
 
-#bjgvhhgxhb .gt_empty_group_heading {
+#gfymmtcyvo .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -977,15 +977,15 @@ The success rate is thus the number of successful plays divided by the sum of al
   vertical-align: middle;
 }
 
-#bjgvhhgxhb .gt_from_md &gt; :first-child {
+#gfymmtcyvo .gt_from_md &gt; :first-child {
   margin-top: 0;
 }
 
-#bjgvhhgxhb .gt_from_md &gt; :last-child {
+#gfymmtcyvo .gt_from_md &gt; :last-child {
   margin-bottom: 0;
 }
 
-#bjgvhhgxhb .gt_row {
+#gfymmtcyvo .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1004,7 +1004,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   overflow-x: hidden;
 }
 
-#bjgvhhgxhb .gt_stub {
+#gfymmtcyvo .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1016,7 +1016,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   padding-left: 12px;
 }
 
-#bjgvhhgxhb .gt_summary_row {
+#gfymmtcyvo .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1026,7 +1026,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   padding-right: 5px;
 }
 
-#bjgvhhgxhb .gt_first_summary_row {
+#gfymmtcyvo .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1036,7 +1036,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-top-color: #D3D3D3;
 }
 
-#bjgvhhgxhb .gt_grand_summary_row {
+#gfymmtcyvo .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1046,7 +1046,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   padding-right: 5px;
 }
 
-#bjgvhhgxhb .gt_first_grand_summary_row {
+#gfymmtcyvo .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1056,11 +1056,11 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-top-color: #D3D3D3;
 }
 
-#bjgvhhgxhb .gt_striped {
+#gfymmtcyvo .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#bjgvhhgxhb .gt_table_body {
+#gfymmtcyvo .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1069,7 +1069,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-bottom-color: #D3D3D3;
 }
 
-#bjgvhhgxhb .gt_footnotes {
+#gfymmtcyvo .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1083,13 +1083,13 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-right-color: #D3D3D3;
 }
 
-#bjgvhhgxhb .gt_footnote {
+#gfymmtcyvo .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#bjgvhhgxhb .gt_sourcenotes {
+#gfymmtcyvo .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1103,41 +1103,41 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-right-color: #D3D3D3;
 }
 
-#bjgvhhgxhb .gt_sourcenote {
+#gfymmtcyvo .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#bjgvhhgxhb .gt_left {
+#gfymmtcyvo .gt_left {
   text-align: left;
 }
 
-#bjgvhhgxhb .gt_center {
+#gfymmtcyvo .gt_center {
   text-align: center;
 }
 
-#bjgvhhgxhb .gt_right {
+#gfymmtcyvo .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#bjgvhhgxhb .gt_font_normal {
+#gfymmtcyvo .gt_font_normal {
   font-weight: normal;
 }
 
-#bjgvhhgxhb .gt_font_bold {
+#gfymmtcyvo .gt_font_bold {
   font-weight: bold;
 }
 
-#bjgvhhgxhb .gt_font_italic {
+#gfymmtcyvo .gt_font_italic {
   font-style: italic;
 }
 
-#bjgvhhgxhb .gt_super {
+#gfymmtcyvo .gt_super {
   font-size: 65%;
 }
 
-#bjgvhhgxhb .gt_footnote_marks {
+#gfymmtcyvo .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -1182,12 +1182,12 @@ The success rate is thus the number of successful plays divided by the sum of al
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;p&gt;While it would be tempting to chalk up this season’s record entirely to bad luck and assume that the football gods will be more merciful next season, it is worth considering that this trend holds over the entirety of Scott Frost’s tenure at Nebraska. While Frost has gone a mere 15-25, the stats suggest his teams played at more of a 23-17 clip.&lt;/p&gt;
-&lt;div id=&#34;wvgblienrx&#34; style=&#34;overflow-x:auto;overflow-y:auto;width:auto;height:auto;&#34;&gt;
+&lt;div id=&#34;hbkhqrnvng&#34; style=&#34;overflow-x:auto;overflow-y:auto;width:auto;height:auto;&#34;&gt;
 &lt;style&gt;html {
   font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Oxygen, Ubuntu, Cantarell, &#39;Helvetica Neue&#39;, &#39;Fira Sans&#39;, &#39;Droid Sans&#39;, Arial, sans-serif;
 }
 
-#wvgblienrx .gt_table {
+#hbkhqrnvng .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1212,7 +1212,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-left-color: #D3D3D3;
 }
 
-#wvgblienrx .gt_heading {
+#hbkhqrnvng .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1224,7 +1224,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-right-color: #D3D3D3;
 }
 
-#wvgblienrx .gt_title {
+#hbkhqrnvng .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1234,7 +1234,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-bottom-width: 0;
 }
 
-#wvgblienrx .gt_subtitle {
+#hbkhqrnvng .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1244,13 +1244,13 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-top-width: 0;
 }
 
-#wvgblienrx .gt_bottom_border {
+#hbkhqrnvng .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#wvgblienrx .gt_col_headings {
+#hbkhqrnvng .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1265,7 +1265,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-right-color: #D3D3D3;
 }
 
-#wvgblienrx .gt_col_heading {
+#hbkhqrnvng .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1285,7 +1285,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   overflow-x: hidden;
 }
 
-#wvgblienrx .gt_column_spanner_outer {
+#hbkhqrnvng .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1297,15 +1297,15 @@ The success rate is thus the number of successful plays divided by the sum of al
   padding-right: 4px;
 }
 
-#wvgblienrx .gt_column_spanner_outer:first-child {
+#hbkhqrnvng .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#wvgblienrx .gt_column_spanner_outer:last-child {
+#hbkhqrnvng .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#wvgblienrx .gt_column_spanner {
+#hbkhqrnvng .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1317,7 +1317,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   width: 100%;
 }
 
-#wvgblienrx .gt_group_heading {
+#hbkhqrnvng .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1339,7 +1339,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   vertical-align: middle;
 }
 
-#wvgblienrx .gt_empty_group_heading {
+#hbkhqrnvng .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1354,15 +1354,15 @@ The success rate is thus the number of successful plays divided by the sum of al
   vertical-align: middle;
 }
 
-#wvgblienrx .gt_from_md &gt; :first-child {
+#hbkhqrnvng .gt_from_md &gt; :first-child {
   margin-top: 0;
 }
 
-#wvgblienrx .gt_from_md &gt; :last-child {
+#hbkhqrnvng .gt_from_md &gt; :last-child {
   margin-bottom: 0;
 }
 
-#wvgblienrx .gt_row {
+#hbkhqrnvng .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1381,7 +1381,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   overflow-x: hidden;
 }
 
-#wvgblienrx .gt_stub {
+#hbkhqrnvng .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1393,7 +1393,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   padding-left: 12px;
 }
 
-#wvgblienrx .gt_summary_row {
+#hbkhqrnvng .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1403,7 +1403,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   padding-right: 5px;
 }
 
-#wvgblienrx .gt_first_summary_row {
+#hbkhqrnvng .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1413,7 +1413,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-top-color: #D3D3D3;
 }
 
-#wvgblienrx .gt_grand_summary_row {
+#hbkhqrnvng .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1423,7 +1423,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   padding-right: 5px;
 }
 
-#wvgblienrx .gt_first_grand_summary_row {
+#hbkhqrnvng .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1433,11 +1433,11 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-top-color: #D3D3D3;
 }
 
-#wvgblienrx .gt_striped {
+#hbkhqrnvng .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#wvgblienrx .gt_table_body {
+#hbkhqrnvng .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1446,7 +1446,7 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-bottom-color: #D3D3D3;
 }
 
-#wvgblienrx .gt_footnotes {
+#hbkhqrnvng .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1460,13 +1460,13 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-right-color: #D3D3D3;
 }
 
-#wvgblienrx .gt_footnote {
+#hbkhqrnvng .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#wvgblienrx .gt_sourcenotes {
+#hbkhqrnvng .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1480,41 +1480,41 @@ The success rate is thus the number of successful plays divided by the sum of al
   border-right-color: #D3D3D3;
 }
 
-#wvgblienrx .gt_sourcenote {
+#hbkhqrnvng .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#wvgblienrx .gt_left {
+#hbkhqrnvng .gt_left {
   text-align: left;
 }
 
-#wvgblienrx .gt_center {
+#hbkhqrnvng .gt_center {
   text-align: center;
 }
 
-#wvgblienrx .gt_right {
+#hbkhqrnvng .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#wvgblienrx .gt_font_normal {
+#hbkhqrnvng .gt_font_normal {
   font-weight: normal;
 }
 
-#wvgblienrx .gt_font_bold {
+#hbkhqrnvng .gt_font_bold {
   font-weight: bold;
 }
 
-#wvgblienrx .gt_font_italic {
+#hbkhqrnvng .gt_font_italic {
   font-style: italic;
 }
 
-#wvgblienrx .gt_super {
+#hbkhqrnvng .gt_super {
   font-size: 65%;
 }
 
-#wvgblienrx .gt_footnote_marks {
+#hbkhqrnvng .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
