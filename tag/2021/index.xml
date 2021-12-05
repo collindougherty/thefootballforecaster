@@ -5,12 +5,161 @@
     <link>https://collindougherty.github.io/thefootballforecaster/tag/2021/</link>
       <atom:link href="https://collindougherty.github.io/thefootballforecaster/tag/2021/index.xml" rel="self" type="application/rss+xml" />
     <description>2021</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 26 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 05 Dec 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://collindougherty.github.io/thefootballforecaster/media/icon_hue3d685655c84c625d5ace1882e0e1f92_410892_512x512_fill_lanczos_center_3.png</url>
       <title>2021</title>
       <link>https://collindougherty.github.io/thefootballforecaster/tag/2021/</link>
     </image>
+    
+    <item>
+      <title>We Thought Georgia Had the Best Defense of the 21st century. Until Yesterday.</title>
+      <link>https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/</link>
+      <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/</guid>
+      <description>
+&lt;script src=&#34;https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Test&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(rvest)
+library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## v ggplot2 3.3.5     v purrr   0.3.4
+## v tibble  3.1.3     v dplyr   1.0.7
+## v tidyr   1.1.3     v stringr 1.4.0
+## v readr   2.0.1     v forcats 0.5.1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter()         masks stats::filter()
+## x readr::guess_encoding() masks rvest::guess_encoding()
+## x dplyr::lag()            masks stats::lag()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(lubridate)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Attaching package: &amp;#39;lubridate&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following objects are masked from &amp;#39;package:base&amp;#39;:
+## 
+##     date, intersect, setdiff, union&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;yearurl &amp;lt;- list(&amp;quot;/cfb/years/2000-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2001-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2002-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2003-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2004-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2005-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2006-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2007-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2008-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2009-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2010-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2011-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2012-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2013-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2014-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2015-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2016-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2017-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2018-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2019-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2020-team-defense.html&amp;quot;, &amp;quot;/cfb/years/2021-team-defense.html&amp;quot;)
+
+uri &amp;lt;- &amp;quot;https://www.sports-reference.com&amp;quot;
+
+logs &amp;lt;- tibble()
+
+for (i in yearurl){
+  log_url &amp;lt;- i
+  year_url &amp;lt;- paste(uri, log_url, sep=&amp;quot;&amp;quot;)  # creating the url to fetch
+  
+  page &amp;lt;- read_html(year_url)
+
+  table &amp;lt;- page %&amp;gt;%
+    html_nodes(xpath = &amp;#39;//*[@id=&amp;quot;defense&amp;quot;]&amp;#39;) %&amp;gt;%
+    html_table(header=FALSE)
+
+table &amp;lt;- table[[1]] %&amp;gt;% rename(Rk=X1, School=X2, G=X3, Pts=X4, pCmp=X5, pAtt=X6, pPct=X7, pYds=X8, pTD=X9, rAtt=X10, rYds=X11, rAvg=X12, rTD=X13, Plays=X14, Yds=X15, Avg=X16, Pass=X17, Rush=X18, Pen=X19, Tot=X20, No=X21, penYds=X22, Fumbles=X23, Ints=X24, TO=X25) %&amp;gt;% filter(pCmp != &amp;quot;Cmp&amp;quot;) %&amp;gt;% filter(pCmp != &amp;quot;Passing&amp;quot;) %&amp;gt;% mutate(Year = i) %&amp;gt;% mutate(Year = gsub(&amp;quot;/cfb/years/&amp;quot;, &amp;quot;&amp;quot;, Year)) %&amp;gt;% mutate(Year = gsub(&amp;quot;-team.*&amp;quot;, &amp;quot;&amp;quot;, Year)) %&amp;gt;% mutate_at(vars(-School), as.numeric)
+
+  logs &amp;lt;- bind_rows(logs, table)  # binding them all together
+  Sys.sleep(3)  # Sys.sleep(3) pauses the loop for 3s so as not to overwhelm website&amp;#39;s server 
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Let&amp;#39;s consider the top 10 defenses by scoring 
+head(arrange(logs,(Pts)), n = 10)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 10 x 26
+##       Rk School          G   Pts  pCmp  pAtt  pPct  pYds   pTD  rAtt  rYds  rAvg
+##    &amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt;       &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+##  1     1 Alabama        13   8.2  12.6  25.7  49.1  112.   0.5  29.7  72.2   2.4
+##  2     1 USC            13   9    15.3  29.4  52.1  134.   0.5  32    87.4   2.7
+##  3     1 Miami (FL)     11   9.4  11.7  26.4  44.5  138.   0.5  42.5 133.    3.1
+##  4     1 Georgia        13   9.5  17.8  31.8  56.2  172.   0.6  31.4  82.2   2.6
+##  5     1 Texas Chri~    11   9.6  13    29.4  44.3  161.   0.9  35.9  84.4   2.3
+##  6     2 Florida St~    12  10.3  18.3  37.3  49.2  203.   0.6  32.3  73.9   2.3
+##  7     1 Nebraska       14  10.4  16.7  35    47.8  179.   0.5  33.2  93.1   2.8
+##  8     1 Alabama        12  10.7  14.6  29.3  49.7  161.   0.8  30.1  94.3   3.1
+##  9     1 Alabama        14  10.9  15.5  28.4  54.7  174.   0.6  31.4  76.4   2.4
+## 10     1 LSU            14  11    15.2  34.1  44.7  185    0.9  28.6  67     2.3
+## # ... with 14 more variables: rTD &amp;lt;dbl&amp;gt;, Plays &amp;lt;dbl&amp;gt;, Yds &amp;lt;dbl&amp;gt;, Avg &amp;lt;dbl&amp;gt;,
+## #   Pass &amp;lt;dbl&amp;gt;, Rush &amp;lt;dbl&amp;gt;, Pen &amp;lt;dbl&amp;gt;, Tot &amp;lt;dbl&amp;gt;, No &amp;lt;dbl&amp;gt;, penYds &amp;lt;dbl&amp;gt;,
+## #   Fumbles &amp;lt;dbl&amp;gt;, Ints &amp;lt;dbl&amp;gt;, TO &amp;lt;dbl&amp;gt;, Year &amp;lt;dbl&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Since at the end of the day, all that matters is the number on the scoreboard, let’s consider points per game allowed first. Georgia ranks #4 in the stat that matters most.&lt;/p&gt;
+&lt;p&gt;But what if we want to consider more than just points per game? Let’s also evaluate them in terms of the number of yards allowed per play, which I would argue is even more important than points per game. To illustrate why I believe this is the case, consider the difference between a defense facing 80 plays per game against explosive Big 12 offenses and a Big Ten team which controls time of possession and is accustomed to facing only 50 plays per game. We would expect the Big 12 defense to give up more yards due to pace of play, but this does not necessarily make the Big 10 defense better.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Let&amp;#39;s consider the top 10 defenses by Yards Per Play 
+head(arrange(logs,(Avg)), n = 10)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 10 x 26
+##       Rk School          G   Pts  pCmp  pAtt  pPct  pYds   pTD  rAtt  rYds  rAvg
+##    &amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt;       &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+##  1     1 Alabama        13   8.2  12.6  25.7  49.1  112.   0.5  29.7  72.2   2.4
+##  2    27 North Caro~    11  19.8  10.7  24.7  43.4  119    1.1  39   102.    2.6
+##  3     2 Virginia T~    11  13.4  14.6  32.2  45.5  166.   0.7  33.7  71.6   2.1
+##  4    19 Texas Chri~    12  18.5  13.2  33.8  38.9  175.   1.3  32.8  64.8   2  
+##  5     1 Ohio State     13  12.8  16.6  31.2  53.2  150.   1    32.8  82.8   2.5
+##  6     1 USC            13   9    15.3  29.4  52.1  134.   0.5  32    87.4   2.7
+##  7     1 Kansas Sta~    13  11.8  14.7  32.2  45.7  180.   0.8  34.3  69.5   2  
+##  8     1 Texas Chri~    11   9.6  13    29.4  44.3  161.   0.9  35.9  84.4   2.3
+##  9     8 Southern M~    11  16.5  16.9  33.6  50.3  162.   0.8  37.6 106.    2.8
+## 10     3 Texas          12  13.7  15.6  30.8  50.7  147.   0.5  32.1  89.5   2.8
+## # ... with 14 more variables: rTD &amp;lt;dbl&amp;gt;, Plays &amp;lt;dbl&amp;gt;, Yds &amp;lt;dbl&amp;gt;, Avg &amp;lt;dbl&amp;gt;,
+## #   Pass &amp;lt;dbl&amp;gt;, Rush &amp;lt;dbl&amp;gt;, Pen &amp;lt;dbl&amp;gt;, Tot &amp;lt;dbl&amp;gt;, No &amp;lt;dbl&amp;gt;, penYds &amp;lt;dbl&amp;gt;,
+## #   Fumbles &amp;lt;dbl&amp;gt;, Ints &amp;lt;dbl&amp;gt;, TO &amp;lt;dbl&amp;gt;, Year &amp;lt;dbl&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ok, so this is a good start, but things are starting to get confusing. Some of these teams didn’t show up in our top 10 defenses by scoring. Let’s make our own ranking of a “great defense”. The components of a good defense are many, but on paper we can make it remarkably simple. How good is their pass defense, rush defense, and do they force turnovers? Most importantly, how many points a game are they giving up? We can take these 4 categories and make a new, composite stat, which combines all 4. In order to do this, we will use a z-score. A z-score is essentially a numeric value, where 0 means you are average compared to other teams, 1 means you are better than 84.1% of teams, 2 means you are better than 97.7% of teams, and 3 puts you in the top 0.1%. We will find the z-score for each of our 4 stats and sum them to get a new, composite ranking.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;logs &amp;lt;- logs %&amp;gt;% mutate(zScoreRushing = -(rAvg - mean(rAvg)/sd(rAvg))) %&amp;gt;% mutate(pAvg = pYds/pAtt) %&amp;gt;% mutate(zScorePassing = -(pAvg - mean(pAvg)/sd(pAvg))) %&amp;gt;% mutate(zScoreScoring = -(Pts - mean(Pts)/sd(Pts))) %&amp;gt;% mutate(zScoreTurnovers = (TO - mean(TO)/sd(TO))) %&amp;gt;% mutate(zScoreComposite = (zScorePassing + zScoreRushing + zScoreScoring + zScoreTurnovers))
+
+top10 &amp;lt;- logs %&amp;gt;% select(School, Year, Pts, pAvg, rAvg, TO, rYds, pYds, zScoreComposite)
+top10 &amp;lt;- top10 %&amp;gt;% filter(zScoreComposite &amp;gt; -3.52)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;georgia &amp;lt;- logs %&amp;gt;%
+  filter(School == &amp;quot;Georgia&amp;quot; &amp;amp; Year == 2021) 
+
+logs %&amp;gt;%
+  ggplot() + 
+  geom_point(data = logs, aes(x=Yds,y=Pts), color = &amp;quot;grey&amp;quot;) + 
+  geom_point(data = georgia, aes(x=Yds,y=Pts), color = &amp;quot;red&amp;quot;) +
+  geom_smooth(data = logs, method=&amp;#39;lm&amp;#39;, aes(x=Yds, y=Pts), formula= y~x) +
+  geom_hline(yintercept=mean(logs$Pts, na.rm = TRUE), color=&amp;quot;dark grey&amp;quot;) + 
+  geom_vline(xintercept=mean(logs$Yds, na.rm = TRUE), color=&amp;quot;dark grey&amp;quot;) + 
+  geom_text(aes(x=250,y=8, label=&amp;quot;Georgia&amp;quot;), color=&amp;quot;red&amp;quot;) +
+  labs(x = &amp;quot;Yards per Game Allowed&amp;quot;, y = &amp;quot;Points per Game Allowed&amp;quot;, title = &amp;quot;Despite the Lackluster Performance Yesterday...&amp;quot;, subtitle = &amp;quot;Georgia stacks up among the best in the 21st Century on Defense&amp;quot;, caption = &amp;quot;By: Collin Dougherty | Data Source: sportsreference.com&amp;quot;) + 
+  theme_minimal() +
+  theme(plot.title = element_text(size = 20, face = &amp;quot;bold&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/index.en_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;georgia &amp;lt;- logs %&amp;gt;%
+  filter(School == &amp;quot;Georgia&amp;quot; &amp;amp; Year == 2021) 
+
+logs %&amp;gt;%
+  ggplot() + 
+  geom_point(data = logs, aes(x=Avg,y=Pts), color = &amp;quot;grey&amp;quot;) + 
+  geom_point(data = georgia, aes(x=Avg,y=Pts), color = &amp;quot;red&amp;quot;) +
+  geom_smooth(data = logs, method=&amp;#39;lm&amp;#39;, aes(x=Avg, y=Pts), formula= y~x) +
+  geom_hline(yintercept=mean(logs$Pts, na.rm = TRUE), color=&amp;quot;dark grey&amp;quot;) + 
+  geom_vline(xintercept=mean(logs$Avg, na.rm = TRUE), color=&amp;quot;dark grey&amp;quot;) + 
+  geom_text(aes(x=4,y=8, label=&amp;quot;Georgia&amp;quot;), color=&amp;quot;red&amp;quot;) +
+  labs(x = &amp;quot;Yards per Play Allowed&amp;quot;, y = &amp;quot;Points per Game Allowed&amp;quot;, title = &amp;quot;Despite the Lackluster Performance Yesterday...&amp;quot;, subtitle = &amp;quot;Georgia stacks up among the best in the 21st Century on Defense&amp;quot;, caption = &amp;quot;By: Collin Dougherty | Data Source: sportsreference.com&amp;quot;) + 
+  theme_minimal() +
+  theme(plot.title = element_text(size = 20, face = &amp;quot;bold&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/index.en_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;defense21 &amp;lt;- logs %&amp;gt;% filter(Year == 2021 &amp;amp; Pts &amp;lt;17)
+yards &amp;lt;- defense21 %&amp;gt;% select(School, rYds, pYds)
+
+yards &amp;lt;- yards %&amp;gt;% 
+  pivot_longer(
+    cols=contains(&amp;quot;Yds&amp;quot;), 
+    names_to=&amp;quot;Type&amp;quot;, 
+    values_to=&amp;quot;Yds&amp;quot;)
+
+ggplot() + 
+  geom_bar(data=yards, aes(x=reorder(School, -Yds), weight=Yds, fill=Type)) + 
+  coord_flip() + labs(x = &amp;quot;Team&amp;quot;, y = &amp;quot;Yards per Game Allowed&amp;quot;, title = &amp;quot;The Best Defenses by Yardage per Game in 2021&amp;quot;, subtitle = &amp;quot;Georgia stacks up among the best in 2021 on Defense&amp;quot;, caption = &amp;quot;By: Collin Dougherty | Data Source: sportsreference.com&amp;quot;) + 
+  theme_minimal() +
+  theme(plot.title = element_text(size = 20, face = &amp;quot;bold&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/index.en_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;yearteam &amp;lt;- logs %&amp;gt;% mutate(yrtm = paste(School, Year, sep=&amp;quot;, &amp;quot;))
+defenses &amp;lt;- yearteam %&amp;gt;% filter(Pts &amp;lt;12)
+pts &amp;lt;- defenses %&amp;gt;% select(yrtm, Pts)
+
+ggplot() + 
+  geom_bar(data=pts, aes(x=reorder(yrtm, -Pts), weight=Pts)) + 
+  coord_flip() + labs(x = &amp;quot;Team&amp;quot;, y = &amp;quot;Points per Game Allowed&amp;quot;, title = &amp;quot;The Best Defenses by Points per Game this Century&amp;quot;, subtitle = &amp;quot;Georgia stacks up among the best in the One Stat that Matters&amp;quot;, caption = &amp;quot;By: Collin Dougherty | Data Source: sportsreference.com&amp;quot;) + 
+  theme_minimal() +
+  theme(plot.title = element_text(size = 20, face = &amp;quot;bold&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/index.en_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Power Rankings 2021</title>

@@ -1,0 +1,1261 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Collin Dougherty" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Test
+library(rvest)library(tidyverse)## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --## v ggplot2 3.3.5 v purrr 0.3.4## v tibble 3.1.3 v dplyr 1.0.7## v tidyr 1." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/" />
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="https://collindougherty.github.io/thefootballforecaster/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://collindougherty.github.io/thefootballforecaster/css/wowchemy.9f457a613f02e9027025db7311c58ccf.css" />
+
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-209543093-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-209543093-1', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MLLQFNW');
+</script>
+
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="https://collindougherty.github.io/thefootballforecaster/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="https://collindougherty.github.io/thefootballforecaster/media/icon_hue3d685655c84c625d5ace1882e0e1f92_410892_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="https://collindougherty.github.io/thefootballforecaster/media/icon_hue3d685655c84c625d5ace1882e0e1f92_410892_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="The Football Forecaster" />
+  <meta property="og:url" content="https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/" />
+  <meta property="og:title" content="We Thought Georgia Had the Best Defense of the 21st century. Until Yesterday. | The Football Forecaster" />
+  <meta property="og:description" content="Test
+library(rvest)library(tidyverse)## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --## v ggplot2 3.3.5 v purrr 0.3.4## v tibble 3.1.3 v dplyr 1.0.7## v tidyr 1." /><meta property="og:image" content="https://collindougherty.github.io/thefootballforecaster/media/icon_hue3d685655c84c625d5ace1882e0e1f92_410892_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://collindougherty.github.io/thefootballforecaster/media/icon_hue3d685655c84c625d5ace1882e0e1f92_410892_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2021-12-05T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-12-05T15:05:18-06:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/"
+  },
+  "headline": "We Thought Georgia Had the Best Defense of the 21st century. Until Yesterday.",
+  
+  "datePublished": "2021-12-05T00:00:00Z",
+  "dateModified": "2021-12-05T15:05:18-06:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Collin Dougherty"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Football Forecaster",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://collindougherty.github.io/thefootballforecaster/media/icon_hue3d685655c84c625d5ace1882e0e1f92_410892_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Test\nlibrary(rvest)\rlibrary(tidyverse)\r## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --\r## v ggplot2 3.3.5 v purrr 0.3.4\r## v tibble 3.1.3 v dplyr 1.0.7\r## v tidyr 1."
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>We Thought Georgia Had the Best Defense of the 21st century. Until Yesterday. | The Football Forecaster</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="14d44c590d50e5ef38a40fc32a1769a4" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="https://collindougherty.github.io/thefootballforecaster/js/wowchemy-init.min.8988fb2a4bba758785868cfcb5244555.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="https://collindougherty.github.io/thefootballforecaster/">The Football Forecaster</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="https://collindougherty.github.io/thefootballforecaster/">The Football Forecaster</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://collindougherty.github.io/thefootballforecaster/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://collindougherty.github.io/thefootballforecaster/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+          
+          <li class="nav-item d-none d-lg-inline-flex">
+            <a class="nav-link" href="https://twitter.com/CollinD0ugherty" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>We Thought Georgia Had the Best Defense of the 21st century. Until Yesterday.</h1>
+
+  
+  <p class="page-subtitle">But they are still pretty good. Oh hi Alabama</p>
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Dec 5, 2021
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    7 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+<script src="https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/index.en_files/header-attrs/header-attrs.js"></script>
+
+
+<p>Test</p>
+<pre class="r"><code>library(rvest)
+library(tidyverse)</code></pre>
+<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --</code></pre>
+<pre><code>## v ggplot2 3.3.5     v purrr   0.3.4
+## v tibble  3.1.3     v dplyr   1.0.7
+## v tidyr   1.1.3     v stringr 1.4.0
+## v readr   2.0.1     v forcats 0.5.1</code></pre>
+<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter()         masks stats::filter()
+## x readr::guess_encoding() masks rvest::guess_encoding()
+## x dplyr::lag()            masks stats::lag()</code></pre>
+<pre class="r"><code>library(lubridate)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;lubridate&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     date, intersect, setdiff, union</code></pre>
+<pre class="r"><code>yearurl &lt;- list(&quot;/cfb/years/2000-team-defense.html&quot;, &quot;/cfb/years/2001-team-defense.html&quot;, &quot;/cfb/years/2002-team-defense.html&quot;, &quot;/cfb/years/2003-team-defense.html&quot;, &quot;/cfb/years/2004-team-defense.html&quot;, &quot;/cfb/years/2005-team-defense.html&quot;, &quot;/cfb/years/2006-team-defense.html&quot;, &quot;/cfb/years/2007-team-defense.html&quot;, &quot;/cfb/years/2008-team-defense.html&quot;, &quot;/cfb/years/2009-team-defense.html&quot;, &quot;/cfb/years/2010-team-defense.html&quot;, &quot;/cfb/years/2011-team-defense.html&quot;, &quot;/cfb/years/2012-team-defense.html&quot;, &quot;/cfb/years/2013-team-defense.html&quot;, &quot;/cfb/years/2014-team-defense.html&quot;, &quot;/cfb/years/2015-team-defense.html&quot;, &quot;/cfb/years/2016-team-defense.html&quot;, &quot;/cfb/years/2017-team-defense.html&quot;, &quot;/cfb/years/2018-team-defense.html&quot;, &quot;/cfb/years/2019-team-defense.html&quot;, &quot;/cfb/years/2020-team-defense.html&quot;, &quot;/cfb/years/2021-team-defense.html&quot;)
+
+uri &lt;- &quot;https://www.sports-reference.com&quot;
+
+logs &lt;- tibble()
+
+for (i in yearurl){
+  log_url &lt;- i
+  year_url &lt;- paste(uri, log_url, sep=&quot;&quot;)  # creating the url to fetch
+  
+  page &lt;- read_html(year_url)
+
+  table &lt;- page %&gt;%
+    html_nodes(xpath = &#39;//*[@id=&quot;defense&quot;]&#39;) %&gt;%
+    html_table(header=FALSE)
+
+table &lt;- table[[1]] %&gt;% rename(Rk=X1, School=X2, G=X3, Pts=X4, pCmp=X5, pAtt=X6, pPct=X7, pYds=X8, pTD=X9, rAtt=X10, rYds=X11, rAvg=X12, rTD=X13, Plays=X14, Yds=X15, Avg=X16, Pass=X17, Rush=X18, Pen=X19, Tot=X20, No=X21, penYds=X22, Fumbles=X23, Ints=X24, TO=X25) %&gt;% filter(pCmp != &quot;Cmp&quot;) %&gt;% filter(pCmp != &quot;Passing&quot;) %&gt;% mutate(Year = i) %&gt;% mutate(Year = gsub(&quot;/cfb/years/&quot;, &quot;&quot;, Year)) %&gt;% mutate(Year = gsub(&quot;-team.*&quot;, &quot;&quot;, Year)) %&gt;% mutate_at(vars(-School), as.numeric)
+
+  logs &lt;- bind_rows(logs, table)  # binding them all together
+  Sys.sleep(3)  # Sys.sleep(3) pauses the loop for 3s so as not to overwhelm website&#39;s server 
+}</code></pre>
+<pre class="r"><code># Let&#39;s consider the top 10 defenses by scoring 
+head(arrange(logs,(Pts)), n = 10)</code></pre>
+<pre><code>## # A tibble: 10 x 26
+##       Rk School          G   Pts  pCmp  pAtt  pPct  pYds   pTD  rAtt  rYds  rAvg
+##    &lt;dbl&gt; &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+##  1     1 Alabama        13   8.2  12.6  25.7  49.1  112.   0.5  29.7  72.2   2.4
+##  2     1 USC            13   9    15.3  29.4  52.1  134.   0.5  32    87.4   2.7
+##  3     1 Miami (FL)     11   9.4  11.7  26.4  44.5  138.   0.5  42.5 133.    3.1
+##  4     1 Georgia        13   9.5  17.8  31.8  56.2  172.   0.6  31.4  82.2   2.6
+##  5     1 Texas Chri~    11   9.6  13    29.4  44.3  161.   0.9  35.9  84.4   2.3
+##  6     2 Florida St~    12  10.3  18.3  37.3  49.2  203.   0.6  32.3  73.9   2.3
+##  7     1 Nebraska       14  10.4  16.7  35    47.8  179.   0.5  33.2  93.1   2.8
+##  8     1 Alabama        12  10.7  14.6  29.3  49.7  161.   0.8  30.1  94.3   3.1
+##  9     1 Alabama        14  10.9  15.5  28.4  54.7  174.   0.6  31.4  76.4   2.4
+## 10     1 LSU            14  11    15.2  34.1  44.7  185    0.9  28.6  67     2.3
+## # ... with 14 more variables: rTD &lt;dbl&gt;, Plays &lt;dbl&gt;, Yds &lt;dbl&gt;, Avg &lt;dbl&gt;,
+## #   Pass &lt;dbl&gt;, Rush &lt;dbl&gt;, Pen &lt;dbl&gt;, Tot &lt;dbl&gt;, No &lt;dbl&gt;, penYds &lt;dbl&gt;,
+## #   Fumbles &lt;dbl&gt;, Ints &lt;dbl&gt;, TO &lt;dbl&gt;, Year &lt;dbl&gt;</code></pre>
+<p>Since at the end of the day, all that matters is the number on the scoreboard, let’s consider points per game allowed first. Georgia ranks #4 in the stat that matters most.</p>
+<p>But what if we want to consider more than just points per game? Let’s also evaluate them in terms of the number of yards allowed per play, which I would argue is even more important than points per game. To illustrate why I believe this is the case, consider the difference between a defense facing 80 plays per game against explosive Big 12 offenses and a Big Ten team which controls time of possession and is accustomed to facing only 50 plays per game. We would expect the Big 12 defense to give up more yards due to pace of play, but this does not necessarily make the Big 10 defense better.</p>
+<pre class="r"><code># Let&#39;s consider the top 10 defenses by Yards Per Play 
+head(arrange(logs,(Avg)), n = 10)</code></pre>
+<pre><code>## # A tibble: 10 x 26
+##       Rk School          G   Pts  pCmp  pAtt  pPct  pYds   pTD  rAtt  rYds  rAvg
+##    &lt;dbl&gt; &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+##  1     1 Alabama        13   8.2  12.6  25.7  49.1  112.   0.5  29.7  72.2   2.4
+##  2    27 North Caro~    11  19.8  10.7  24.7  43.4  119    1.1  39   102.    2.6
+##  3     2 Virginia T~    11  13.4  14.6  32.2  45.5  166.   0.7  33.7  71.6   2.1
+##  4    19 Texas Chri~    12  18.5  13.2  33.8  38.9  175.   1.3  32.8  64.8   2  
+##  5     1 Ohio State     13  12.8  16.6  31.2  53.2  150.   1    32.8  82.8   2.5
+##  6     1 USC            13   9    15.3  29.4  52.1  134.   0.5  32    87.4   2.7
+##  7     1 Kansas Sta~    13  11.8  14.7  32.2  45.7  180.   0.8  34.3  69.5   2  
+##  8     1 Texas Chri~    11   9.6  13    29.4  44.3  161.   0.9  35.9  84.4   2.3
+##  9     8 Southern M~    11  16.5  16.9  33.6  50.3  162.   0.8  37.6 106.    2.8
+## 10     3 Texas          12  13.7  15.6  30.8  50.7  147.   0.5  32.1  89.5   2.8
+## # ... with 14 more variables: rTD &lt;dbl&gt;, Plays &lt;dbl&gt;, Yds &lt;dbl&gt;, Avg &lt;dbl&gt;,
+## #   Pass &lt;dbl&gt;, Rush &lt;dbl&gt;, Pen &lt;dbl&gt;, Tot &lt;dbl&gt;, No &lt;dbl&gt;, penYds &lt;dbl&gt;,
+## #   Fumbles &lt;dbl&gt;, Ints &lt;dbl&gt;, TO &lt;dbl&gt;, Year &lt;dbl&gt;</code></pre>
+<p>Ok, so this is a good start, but things are starting to get confusing. Some of these teams didn’t show up in our top 10 defenses by scoring. Let’s make our own ranking of a “great defense”. The components of a good defense are many, but on paper we can make it remarkably simple. How good is their pass defense, rush defense, and do they force turnovers? Most importantly, how many points a game are they giving up? We can take these 4 categories and make a new, composite stat, which combines all 4. In order to do this, we will use a z-score. A z-score is essentially a numeric value, where 0 means you are average compared to other teams, 1 means you are better than 84.1% of teams, 2 means you are better than 97.7% of teams, and 3 puts you in the top 0.1%. We will find the z-score for each of our 4 stats and sum them to get a new, composite ranking.</p>
+<pre class="r"><code>logs &lt;- logs %&gt;% mutate(zScoreRushing = -(rAvg - mean(rAvg)/sd(rAvg))) %&gt;% mutate(pAvg = pYds/pAtt) %&gt;% mutate(zScorePassing = -(pAvg - mean(pAvg)/sd(pAvg))) %&gt;% mutate(zScoreScoring = -(Pts - mean(Pts)/sd(Pts))) %&gt;% mutate(zScoreTurnovers = (TO - mean(TO)/sd(TO))) %&gt;% mutate(zScoreComposite = (zScorePassing + zScoreRushing + zScoreScoring + zScoreTurnovers))
+
+top10 &lt;- logs %&gt;% select(School, Year, Pts, pAvg, rAvg, TO, rYds, pYds, zScoreComposite)
+top10 &lt;- top10 %&gt;% filter(zScoreComposite &gt; -3.52)</code></pre>
+<pre class="r"><code>georgia &lt;- logs %&gt;%
+  filter(School == &quot;Georgia&quot; &amp; Year == 2021) 
+
+logs %&gt;%
+  ggplot() + 
+  geom_point(data = logs, aes(x=Yds,y=Pts), color = &quot;grey&quot;) + 
+  geom_point(data = georgia, aes(x=Yds,y=Pts), color = &quot;red&quot;) +
+  geom_smooth(data = logs, method=&#39;lm&#39;, aes(x=Yds, y=Pts), formula= y~x) +
+  geom_hline(yintercept=mean(logs$Pts, na.rm = TRUE), color=&quot;dark grey&quot;) + 
+  geom_vline(xintercept=mean(logs$Yds, na.rm = TRUE), color=&quot;dark grey&quot;) + 
+  geom_text(aes(x=250,y=8, label=&quot;Georgia&quot;), color=&quot;red&quot;) +
+  labs(x = &quot;Yards per Game Allowed&quot;, y = &quot;Points per Game Allowed&quot;, title = &quot;Despite the Lackluster Performance Yesterday...&quot;, subtitle = &quot;Georgia stacks up among the best in the 21st Century on Defense&quot;, caption = &quot;By: Collin Dougherty | Data Source: sportsreference.com&quot;) + 
+  theme_minimal() +
+  theme(plot.title = element_text(size = 20, face = &quot;bold&quot;))</code></pre>
+<p><img src="https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/index.en_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<pre class="r"><code>georgia &lt;- logs %&gt;%
+  filter(School == &quot;Georgia&quot; &amp; Year == 2021) 
+
+logs %&gt;%
+  ggplot() + 
+  geom_point(data = logs, aes(x=Avg,y=Pts), color = &quot;grey&quot;) + 
+  geom_point(data = georgia, aes(x=Avg,y=Pts), color = &quot;red&quot;) +
+  geom_smooth(data = logs, method=&#39;lm&#39;, aes(x=Avg, y=Pts), formula= y~x) +
+  geom_hline(yintercept=mean(logs$Pts, na.rm = TRUE), color=&quot;dark grey&quot;) + 
+  geom_vline(xintercept=mean(logs$Avg, na.rm = TRUE), color=&quot;dark grey&quot;) + 
+  geom_text(aes(x=4,y=8, label=&quot;Georgia&quot;), color=&quot;red&quot;) +
+  labs(x = &quot;Yards per Play Allowed&quot;, y = &quot;Points per Game Allowed&quot;, title = &quot;Despite the Lackluster Performance Yesterday...&quot;, subtitle = &quot;Georgia stacks up among the best in the 21st Century on Defense&quot;, caption = &quot;By: Collin Dougherty | Data Source: sportsreference.com&quot;) + 
+  theme_minimal() +
+  theme(plot.title = element_text(size = 20, face = &quot;bold&quot;))</code></pre>
+<p><img src="https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/index.en_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<pre class="r"><code>defense21 &lt;- logs %&gt;% filter(Year == 2021 &amp; Pts &lt;17)
+yards &lt;- defense21 %&gt;% select(School, rYds, pYds)
+
+yards &lt;- yards %&gt;% 
+  pivot_longer(
+    cols=contains(&quot;Yds&quot;), 
+    names_to=&quot;Type&quot;, 
+    values_to=&quot;Yds&quot;)
+
+ggplot() + 
+  geom_bar(data=yards, aes(x=reorder(School, -Yds), weight=Yds, fill=Type)) + 
+  coord_flip() + labs(x = &quot;Team&quot;, y = &quot;Yards per Game Allowed&quot;, title = &quot;The Best Defenses by Yardage per Game in 2021&quot;, subtitle = &quot;Georgia stacks up among the best in 2021 on Defense&quot;, caption = &quot;By: Collin Dougherty | Data Source: sportsreference.com&quot;) + 
+  theme_minimal() +
+  theme(plot.title = element_text(size = 20, face = &quot;bold&quot;))</code></pre>
+<p><img src="https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/index.en_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<pre class="r"><code>yearteam &lt;- logs %&gt;% mutate(yrtm = paste(School, Year, sep=&quot;, &quot;))
+defenses &lt;- yearteam %&gt;% filter(Pts &lt;12)
+pts &lt;- defenses %&gt;% select(yrtm, Pts)
+
+ggplot() + 
+  geom_bar(data=pts, aes(x=reorder(yrtm, -Pts), weight=Pts)) + 
+  coord_flip() + labs(x = &quot;Team&quot;, y = &quot;Points per Game Allowed&quot;, title = &quot;The Best Defenses by Points per Game this Century&quot;, subtitle = &quot;Georgia stacks up among the best in the One Stat that Matters&quot;, caption = &quot;By: Collin Dougherty | Data Source: sportsreference.com&quot;) + 
+  theme_minimal() +
+  theme(plot.title = element_text(size = 20, face = &quot;bold&quot;))</code></pre>
+<p><img src="https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/index.en_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="https://collindougherty.github.io/thefootballforecaster/tag/2021/">2021</a>
+  
+  <a class="badge badge-light" href="https://collindougherty.github.io/thefootballforecaster/tag/college-football/">College Football</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/&amp;text=We%20Thought%20Georgia%20Had%20the%20Best%20Defense%20of%20the%2021st%20century.%20Until%20Yesterday." target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/&amp;t=We%20Thought%20Georgia%20Had%20the%20Best%20Defense%20of%20the%2021st%20century.%20Until%20Yesterday." target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=We%20Thought%20Georgia%20Had%20the%20Best%20Defense%20of%20the%2021st%20century.%20Until%20Yesterday.&amp;body=https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/&amp;title=We%20Thought%20Georgia%20Had%20the%20Best%20Defense%20of%20the%2021st%20century.%20Until%20Yesterday." target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=We%20Thought%20Georgia%20Had%20the%20Best%20Defense%20of%20the%2021st%20century.%20Until%20Yesterday.%20https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://collindougherty.github.io/thefootballforecaster/post/is-georgia-s-defense-the-best-of-the-21st-century/&amp;title=We%20Thought%20Georgia%20Had%20the%20Best%20Defense%20of%20the%2021st%20century.%20Until%20Yesterday." target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://collindougherty.github.io/thefootballforecaster"><img class="avatar mr-3 avatar-circle" src="https://collindougherty.github.io/thefootballforecaster/author/collin-dougherty/avatar_huc7c0c86d0ea6b9a10b193eaf8a9617c2_373975_270x270_fill_q75_lanczos_center.jpg" alt="Collin Dougherty"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://collindougherty.github.io/thefootballforecaster">Collin Dougherty</a></h5>
+      <h6 class="card-subtitle">Mathematics and Psychology</h6>
+      <p class="card-text">I combine my love for data and learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://collindougherty.github.io/thefootballforecaster/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/CollinD0ugherty" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/collin-dougherty/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="https://collindougherty.github.io/thefootballforecaster/post/power-rankings-2021/">Power Rankings 2021</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="https://collindougherty.github.io/thefootballforecaster/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="https://collindougherty.github.io/thefootballforecaster/en/js/wowchemy.min.d68ecd57c0ec1f1f61d65fd568f1c3a0.js"></script>
+
+    
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+
+</body>
+</html>
