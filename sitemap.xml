@@ -2,23 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/courses/example/python/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/courses/example/visualization/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/courses/example/stats/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://collindougherty.github.io/thefootballforecaster/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/talk/example-talk/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/event/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+    <lastmod>2021-12-05T15:05:18-06:00</lastmod>
   </url><url>
     <loc>https://collindougherty.github.io/thefootballforecaster/tag/2021/</loc>
     <lastmod>2021-12-05T15:05:18-06:00</lastmod>
@@ -65,69 +50,18 @@
     <loc>https://collindougherty.github.io/thefootballforecaster/post/about-the-football-forecaster/</loc>
     <lastmod>2021-10-26T20:36:40-05:00</lastmod>
   </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/courses/</loc>
-    <lastmod>2021-01-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/courses/example/</loc>
-    <lastmod>2021-01-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/publication-type/3/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/publication/preprint/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+    <loc>https://collindougherty.github.io/thefootballforecaster/admin/</loc>
   </url><url>
     <loc>https://collindougherty.github.io/thefootballforecaster/authors/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://collindougherty.github.io/thefootballforecaster/author/collin-dougherty/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://collindougherty.github.io/thefootballforecaster/courses/</loc>
   </url><url>
     <loc>https://collindougherty.github.io/thefootballforecaster/publication_types/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://collindougherty.github.io/thefootballforecaster/publication/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/tag/source-themes/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/slides/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/slides/example/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/tag/deep-learning/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/tag/demo/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/project/external-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/project/internal-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/publication-type/2/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/publication/journal-article/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/author/robert-ford/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/publication-type/1/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/publication/conference-paper/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://collindougherty.github.io/thefootballforecaster/admin/</loc>
+    <loc>https://collindougherty.github.io/thefootballforecaster/event/</loc>
   </url>
 </urlset>
